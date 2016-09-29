@@ -14,6 +14,8 @@ RUN yum install -y unixODBC-devel sqlite-devel gcc-c++ python-devel && \
     pip install pyodbc && \
     rm MapR*.rpm
 
+RUN pip install awscli
+
 # You can review and tweak the odbc connections as needed
 ADD ./odbc_ini_files/odbc.ini /.odbc.ini 
 ADD ./odbc_ini_files/odbcinst.ini /.odbcinst.ini
