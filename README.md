@@ -1,5 +1,6 @@
+[![DockerHub](https://img.shields.io/badge/docker-available-blue.svg)](https://hub.docker.com/u/ctownsend/)
 # Dockerfiles
-My collection of Dockerfiles.  The intent is to make them easy to understand and allow one to get up and running quickly.  
+Most of the containers I've built are in private repositories.  These are my collection of Dockerfiles that I'm able to share.  The intent is to make them easy to understand and allow one to get up and running quickly.  
 I'm often on tight time constraints and need to get a project done quickly.  
 I've come across many Dockerfile projects that look slick as can be and include every option possible as an argument or 
 variable that can be set.  After I start digging in I realize that I'm basically learning someone's custom framework around Docker and all I really wanted was a simple base to work from. 
