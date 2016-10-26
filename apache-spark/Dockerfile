@@ -6,7 +6,8 @@ RUN apk update && \
     apk add py-pip && \
     apk add openjdk7-jre
 
-ADD http://d3kbcqa49mib13.cloudfront.net/spark-2.0.0-bin-hadoop2.7.tgz /
+ADD http://d3kbcqa49mib13.cloudfront.net/spark-2.0.1-bin-hadoop2.7.tgz /
 
 RUN tar -xvf *.tgz && \
-    rm *.tgz
+    rm *.tgz 
+
