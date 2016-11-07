@@ -1,7 +1,7 @@
 # gluster
 
 Documenting a way of creating persistent storage for Docker containers with GlusterFS containers.
-**Note:** This is a quick example.  Make sure you read up on security, changing the default password, and review to original Dockerfile.  I'll be experimenting with running this out on AWS soon and should be able to tighten it up further.
+**Note:** This is a quick example.  Make sure you read up on security, changing the default password, and review the original Dockerfile.  I'll be experimenting with running this out on AWS soon and should be able to tighten it up further.
 
 ### Get the latest Gluster container:
 [Get the latest container:](https://github.com/gluster/gluster-containers) 
@@ -55,5 +55,5 @@ From one of the hosts testing with a write statement to the volume:
 echo "testing, 1,2,3..." >> /gluster/mnt/test.txt
 ```
 
-And from another host you should be able to read/write to the same document.
+And from another host you should be able to read/write to the same document.  One could then launch containers on any host with a mount to /gluster/mnt to store data.  Then it would have access to the data no matter which node it was launched on. 
 
