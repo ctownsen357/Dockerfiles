@@ -18,6 +18,6 @@ Note that the `--mode global` flag is set on the worker service instead of repli
 
 Once running find out where the master service is running and you can submit jobs from that Docker container:
 ```{bash}
-docker service ps spark-master
+docker service ps master
 ```
 
