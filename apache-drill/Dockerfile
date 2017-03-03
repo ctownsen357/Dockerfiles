@@ -4,7 +4,7 @@ RUN yum -y update && \
     yum install -y epel-release && \
     yum install -y python-pip wget && \
     yum install -y java-1.7.0-openjdk-devel && \
-    wget http://apache.mirrors.hoobly.com/drill/drill-1.8.0/apache-drill-1.8.0.tar.gz && \
+    wget http://www-eu.apache.org/dist/drill/drill-1.9.0/apache-drill-1.9.0.tar.gz && \
     tar -xvf apache-drill*.gz && \
     rm apache*.gz 
 
