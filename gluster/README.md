@@ -11,7 +11,7 @@ docker pull gluster/gluster-centos
 
 ### Make the persistent data folders on each host:
 ``` 
-sudo mkdir -p /gluster/logs && sudo mkdir /gluster/data && sudo mkdir /gluster/config && /gluster/mnt
+sudo mkdir -p /gluster/logs /gluster/data /gluster/config /gluster/mnt
 ```
 
 ### Start a GlusterFS container on each host:
