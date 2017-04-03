@@ -6,6 +6,6 @@ I've come across many Dockerfile projects that look slick as can be and include 
 variable that can be set.  After I start digging in I realize that I'm basically learning someone's custom framework around Docker and all I really wanted was a simple base to work from. 
 
 This repo is intented to be a collection of minimal examples to get the target functionality up and running as quickly as 
-possible so that I can get my work done and move on.  Sometimes it involves hackiness that isn't pretty.  
+possible so that I can get my work done and move on.    
 
 
