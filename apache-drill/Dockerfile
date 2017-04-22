@@ -25,7 +25,7 @@ ADD ./odbc_ini_files/mapr.drillodbc.ini /.mapr.drillodbc.ini
 ADD ./tst.py /tst.py 
 ADD ./data/test.csv /test.csv
 
-ENV JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.111-2.6.7.2.el7_2.x86_64/bin
+ENV JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.131-2.6.9.0.el7_3.x86_64/bin/java
 ENV ODBCINI=/.odbc.ini
 ENV MAPRDRILLINI=/.mapr.drillodbc.ini
 ENV LD_LIBRARY_PATH=/usr/local/lib:/opt/mapr/drillodbc/lib/64
