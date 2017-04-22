@@ -8,6 +8,6 @@ docker build -t ctownsend/apache-drill .
 
 ### Run a Drill Bit and Map a local folder into the container:
 ```{bash}
-docker run -i -t -v /your/host/path:/container/path ctownsend/apache-drill /bin/bash -c "/apache-drill-1.9.0/bin/drill-embedded
+docker run -it --rm -v /your/host/path:/container/path ctownsend/apache-drill /bin/bash -c "/apache-drill-1.9.0/bin/drill-embedded
 ```
 
