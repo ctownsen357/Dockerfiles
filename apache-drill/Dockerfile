@@ -1,6 +1,7 @@
 FROM centos:latest
 
 RUN yum -y update && \
+    yum install -y which && \
     yum install -y epel-release && \
     yum install -y python-pip wget && \
     yum install -y java-1.7.0-openjdk-devel && \
@@ -25,7 +26,7 @@ ADD ./odbc_ini_files/mapr.drillodbc.ini /.mapr.drillodbc.ini
 ADD ./tst.py /tst.py 
 ADD ./data/test.csv /test.csv
 
-ENV JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.131-2.6.9.0.el7_3.x86_64/bin/java
+ENV JAVA_HOME=$(which java)
 ENV ODBCINI=/.odbc.ini
 ENV MAPRDRILLINI=/.mapr.drillodbc.ini
 ENV LD_LIBRARY_PATH=/usr/local/lib:/opt/mapr/drillodbc/lib/64
