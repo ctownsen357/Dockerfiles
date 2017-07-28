@@ -5,15 +5,19 @@ RUN yum -y update && \
     yum install -y epel-release && \
     yum install -y python-pip wget && \
     yum install -y java-1.7.0-openjdk-devel && \
-    wget http://www-eu.apache.org/dist/drill/drill-1.9.0/apache-drill-1.9.0.tar.gz && \
+    wget http://www-eu.apache.org/dist/drill/drill-1.10.0/apache-drill-1.10.0.tar.gz && \
     tar -xvf apache-drill*.gz && \
     rm apache*.gz 
 
-RUN wget http://package.mapr.com/tools/MapR-ODBC/MapR_Drill/MapRDrill_odbc_v1.2.1.1000/MapRDrillODBC-1.2.1.x86_64.rpm && \
-    yum localinstall -y --nogpgcheck MapR*.rpm 
-RUN yum install -y unixODBC-devel sqlite-devel gcc-c++ python-devel && \
+RUN wget http://package.mapr.com/tools/MapR-ODBC/MapR_Drill/MapRDrill_odbc_v1.3.8.1030/maprdrill-1.3.8.1030-1.x86_64.rpm && \
+   yum localinstall -y --nogpgcheck mapr*.rpm 
+
+RUN yum install -y unixODBC-devel sqlite-devel gcc-c++ python-devel boost-devel && \
     pip install pyodbc && \
-    rm MapR*.rpm
+	pip install pandas && \
+	pip install pyarrow && \
+	pip install turbodbc && \
+    rm mapr*.rpm
 
 RUN pip install awscli
 
