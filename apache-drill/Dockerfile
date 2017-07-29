@@ -28,6 +28,7 @@ ADD ./odbc_ini_files/mapr.drillodbc.ini /.mapr.drillodbc.ini
 
 # A simple Python connection to the local drill bit over ODBC
 ADD ./tst.py /tst.py 
+ADD ./tst.py /tst_turbo.py 
 ADD ./data/test.csv /test.csv
 
 ENV JAVA_HOME=/usr/bin/java
