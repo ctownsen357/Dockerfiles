@@ -30,6 +30,7 @@ ADD ./odbc_ini_files/mapr.drillodbc.ini /.mapr.drillodbc.ini
 ADD ./tst.py /tst.py 
 ADD ./tst.py /tst_turbo.py 
 ADD ./data/test.csv /test.csv
+ADD ./dfs.sys.drill /tmp/drill/sys.storage_plugins/dfs.sys.drill
 
 ENV JAVA_HOME=/usr/bin/java
 ENV ODBCINI=/.odbc.ini
