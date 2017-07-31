@@ -15,7 +15,7 @@
       "defaultInputFormat" : null
     },
     "flights" : {
-      "location" : "/data/flights",
+      "location" : "~/data/flights",
       "writable" : true,
       "defaultInputFormat" : null
     }
